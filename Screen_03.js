@@ -13,14 +13,14 @@ export default function Screen_03 ({route}) {
               </View>
               <View>
 
-                <Text style={{fontSize:25, fontWeight:'bold'}}>
+                <Text style={{fontSize:25, fontWeight:'bold', marginTop:10}}>
                     Description
                 </Text>
                 <Text>
                     It is a very important form of writing as we write almost verything paragraphs, be it an answer, essay, storry, emails, etc. 
                 </Text>
               </View>
-              <View style={{width:'94%', marginLeft:'3%', marginTop:'20%'}}><Button title='Add to card' ></Button></View>
+              <View style={{width:'94%', marginLeft:'3%', marginTop:'20%'}}><Button title='Add to card' color={'red'} ></Button></View>
            </View>
         </View>
     )
