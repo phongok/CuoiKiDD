@@ -12,6 +12,7 @@ export default function Screen_03 ({route}) {
               <Text style={{textAlign: 'center', fontSize:20, marginLeft:30, marginTop:10}}>15% OFF </Text>
               <Text style={{textAlign: 'center', fontSize:20,marginLeft:30, marginTop:10}}>{route.params.productsNew[0].donGia}</Text>
               </View>
+              
               <View style={{width:'94%', marginLeft:'3%', marginTop:'20%'}}><Button title='Add to card' ></Button></View>
            </View>
         </View>
