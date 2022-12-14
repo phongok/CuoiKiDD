@@ -4,21 +4,15 @@ import Item from './component/Item';
 import Context from './Context';
 import { MyData } from './Context';
 import axios from 'axios'
-
 export const NavigationContext = createContext()
-
 function Screen_02_1() {
-
   const { products, dispatch } = useContext(MyData)
-
   const renderItem = ({ item }) => {
     return (
       <Item id={item.id} name={item.name} url={item.url} donGia={item.donGia}></Item>
     )
   }
-
   useEffect(() => {
-
     axios.get('https://634fff2478563c1d82b5fa10.mockapi.io/api/product')
       .then(function (data) {
         console.log(data.data);
@@ -32,10 +26,9 @@ function Screen_02_1() {
   return (
     <View style={styles.container}>
       <View style={styles.content1}>
-       
         <Text style={{ paddingLeft: 20, fontWeight:'bold', color:'red', fontSize:25 }}>The world's Best Bike</Text>
       </View>
-      <View style={{ marginTop: '10%', marginLeft: '7%' }}>
+      <View style={{ marginTop: '10%', marginLeft: '8%' }}>
         <FlatList data={products} renderItem={renderItem} numColumns={2}></FlatList>
       </View>
     </View>

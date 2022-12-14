@@ -13,10 +13,10 @@ export default function Screen_03 ({route}) {
               </View>
               <View>
 
-                <Text style={{fontSize:25, fontWeight:'bold', marginTop:10}}>
+                <Text style={{fontSize:25, fontWeight:'bold', marginTop:10, marginLeft:10}}>
                     Description
                 </Text>
-                <Text>
+                <Text style={{marginLeft:15, marginRight:10}}>
                     It is a very important form of writing as we write almost verything paragraphs, be it an answer, essay, storry, emails, etc. 
                 </Text>
               </View>
